@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Utah Jazz Basketball</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+</head>
+
+<!--Navbar-->
+
+<body data-spy="scroll" data-target="#my-navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+        <!--Container-->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="#"><img src="logos/jazzLogoBlack.png"></a>
+            </div>
+            <!--Navbar Header-->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#suites">Luxury Suites</a></li>
+                    <li><a href="#eclub">Executive Club</a></li>
+                    <li><a href="#lclub">Lexus Club</a></li>
+                </ul>
+                <p class="navbar-text navbar-right">
+                    <ul class="nav navbar-nav navbar-right social">
+                        <li><a href="#"><i class="fa fa-lg fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-lg fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-lg fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-lg fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-phone-square"></i></a></li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+        <!-- End Container -->
+    </nav>
+    <!--End Navbar -->
+    <!--parallax-->
+    
+        <div class="parallax">
+            <div class="container">
+                <h1>Experience the Jazz</h1>
+                <p>in a private, luxurious setting</p>
+            </div>
+        </div>
+   
+
+    <!--parallax end-->
+
+    <!--Luxury Suites-->
+    <div id="suites"></div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>Luxury Suites</h1>
+                <hr>
+                <h3>The best way to enjoy all the excitement!</h3>
+                <p>Welcome to the very best Utah Sports and Entertainment has to offer - Vivint Smart Home Arena Luxury Suites. Whether you are entertaining business clients, closing a major deal or socializing with family and friends, a Luxury Suite provides all the convenience, comfort and service you desire. Home to the Utah Jazz and the most popular musical acts and family shows - Vivint Smart Home Arena is the place to meet, greet, see and be seen in Utah.</p>
+                <h3>Why be a luxury suite holder?</h3>
+                <p>Your suite can enhance your corporate profile and give you an advantage over your competitors. It offers the chance to communicate your message in a luxurious setting while making entertaining as easy as it is elegant. Be a part of the most unique and exciting way to entertain in Utah by becoming a Vivint Smart Home Arena Luxury Suite holder.</p>
+                <p><b>For more information please call Chris Barney, Vice President - Premium Seating and VIP Services at <span id="phone">801.325.2323</span></b></p>
+            </div>
+            <div class="col-sm-6">
+                <br>
+                <br>
+                <br>
+                <br>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                    </ol>
+
+                    <!--Wrapper for slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="pictures/Jazz-Food-019.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="pictures/T41A9179.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="pictures/Jazz-Food-064.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="pictures/T41A9134.jpg">
+                        </div>
+                    </div>
+                    <!--left and right controls-->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Luxury Suites End-->
+
+    <hr>
+    <!--parallax2-->
+    <div class="parallax-2"></div>
+    <!--parallax2 end-->
+
+
+    <!--Executives Club-->
+    <div id="eclub"></div>
+    <hr>
+    <!--Angular Button Controller-->
+    <div class="container" ng-controller="btnCtrl">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>Executives Club</h1>
+                <hr>
+                <h3>Enjoy the game in style.</h3>
+                <p>The Vivint Smart Home Arena is the center stage for the top events in sports and entertainment in Utah! The most exclusive area to experience the excitement of the Utah Jazz, plus top performing acts and artists, is the Interform Executives Club on the suite level. This newly expanded area offers impeccable sightlines, in-seat service, and an exclusive VIP environment with an array of VIP benefits. The Interform Executives Club is the only place to entertain top clients, business associates, and friends in Utah's greatest sports and entertainment facility!</p>
+                <!--Angular Button-->
+                <button class="btn btn-warning" ng-click="toggle()">See more</button>
+                <div ng-hide="myList">
+                    <ul>
+                        <li>Four seats in the Interform Executives Club to every Utah Jazz preseason and regular season home game</li>
+                        <li>Complimentary full-service in-suite VIP dinner, including soft drinks at all Utah Jazz games (alcoholic beverages available for purchase)</li>
+                        <li>Private events with team coaches and management</li>
+                        <li>Invitations to the annual Utah Jazz Hospitality Suite / Inerform Executives Club Golf Tournament</li>
+                        <li>Private club (21 and older only)</li>
+                        <li>Reserved club parking</li>
+                        <li>Business dress code required</li>
+                        <li>Plenty of room to network, socializes and "close that deal"</li>
+                        <li>The first right to purchase your Interform Executive Club seats or other premium tickets for all other Vivint Smart Home Arena events</li>
+                        <li>Luxury dining area with table service and seat service</li>
+                        <li>Large flat screen TVs located throughout the club</li>
+                        <li>Incredible Suite Level view for Jazz games</li>
+                    </ul>
+                </div>
+                <!--Angular Button End(List)-->
+                <p><b>For more information please call Chris Barney, Vice President - Premium Seating and VIP Services at <span id="phone">801.325.2323</span></b></p>
+            </div>
+            <div class="col-sm-6">
+                <br>
+                <br>
+                <br>
+                <br>
+                <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel2" data-slide-to="1"></li>
+                        <li data-target="#myCarousel2" data-slide-to="2"></li>
+                        <li data-target="#myCarousel2" data-slide-to="3"></li>
+                    </ol>
+
+                    <!--Wrapper for slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="pictures/607A9805.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="pictures/Jazz-Food-094.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="pictures/Jazz-Food-056.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="pictures/T41A9409.jpg">
+                        </div>
+                    </div>
+                    <!--left and right controls-->
+                    <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Executives Club End-->
+
+    <hr>
+    <!--parallax3-->
+    <div class="parallax-3"></div>
+    <!--parallax3 end-->
+
+    <!--Lexus Club-->
+    <div id="lclub"></div>
+    <hr>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h1>Lexus Club</h1>
+                <hr>
+                <h3>Enjoy the game in style.</h3>
+                <p>One of the most prestigious clubs offered, the Lexus Courtside Club provides the ultimate in luxury and sophistication. Located in the front four rows of center court, enjoy the excitement of Jazz basketball from the comfort of oversized leather seats equipped with TV monitors, as well as elite service and amenities, including, pre-game meals and half-time snacks served in the privacy of the Lexus Club dining room.</p>
+                <p><b>For more information please call Chris Barney, Vice President - Premium Seating and VIP Services at <span id="phone">801.325.2323</span></b></p>
+            </div>
+            <div class="col-sm-6">
+                <br>
+                <br>
+                <br>
+                <br>
+                <div id="myCarousel3" class="carousel slide" data-ride="carousel">
+                    <!--Indicators-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel3" data-slide-to="1"></li>
+                        <li data-target="#myCarousel3" data-slide-to="2"></li>
+                        <li data-target="#myCarousel3" data-slide-to="3"></li>
+                    </ol>
+
+                    <!--Wrapper for slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="pictures/607A9789.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="pictures/Jazz-Food-153.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="pictures/607A9785.jpg">
+                        </div>
+                        <div class="item">
+                            <img src="pictures/607A9797.jpg">
+                        </div>
+                    </div>
+                    <!--left and right controls-->
+                    <a class="left carousel-control" href="#myCarousel3" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel3" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!--Lexus Club End-->
+
+    <!--Footer-->
+    <footer id="blackFooter">
+        <br>
+        <!--container-->
+        <div class="container text-center">
+            <p>&copy; Copyright @ 2017 NBA Media Ventures, LLC. All rights reserved. No portion of NBA.com may be duplicated, redistributed or manipulated in any form. By accessing any information beyond this page, you agree to abide by the Privacy Policy/ Your California Privacy Rights and Terms of Use | Ad Choices</p>
+            <p>NBA.com is part of Turner Sports Digital, part of the Turner Sports &amp; Entertainment Digital Network. Advertise on NBA.com | NBA.com | Help Fan Relations | FAQ NBA Career Opportunities</p>
+        </div>
+        <!-- end container-->
+    </footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+<!--Get pictures to load faster-->
+<!--Make responsive to mobile and other devices-->
+<!--Learn how to upload this to server-->
+<!--Add in more JavaScript?-->
+
+</html>
